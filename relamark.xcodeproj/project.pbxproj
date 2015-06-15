@@ -7,9 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		839061EAD180F6BFC123E944 /* Pods_relamark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B462BBA9C6668E91248F7BB /* Pods_relamark.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BC1227FA1B2EC1D00043520A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1227F91B2EC1D00043520A /* MenuViewController.swift */; };
+		BC3C07F31B2034F200AC207E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C07F21B2034F200AC207E /* LoginViewController.swift */; };
+		BC3C07F61B20617200AC207E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C07F51B20617200AC207E /* SignUpViewController.swift */; };
+		BC7657181B2F1D2000F99485 /* MyShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7657171B2F1D2000F99485 /* MyShopListViewController.swift */; };
+		BC9CD0021B183CFE00A7B5AE /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CD0011B183CFE00A7B5AE /* ShopsViewController.swift */; };
+		BCC073A31B2EBAF6001330B7 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = BCC073A21B2EBAF6001330B7 /* button.png */; };
+		BCCA99281B2AE6080064D180 /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = BCCA99271B2AE6080064D180 /* bookmark.png */; };
+		BCCA992F1B2B248C0064D180 /* pin-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = BCCA992D1B2B248C0064D180 /* pin-selected.png */; };
+		BCCA99301B2B248C0064D180 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = BCCA992E1B2B248C0064D180 /* pin.png */; };
+		BCDD3A6B1B1848D1009771BC /* ShopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD3A6A1B1848D1009771BC /* ShopDetailViewController.swift */; };
+		BCDD3A6D1B184EAF009771BC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD3A6C1B184EAF009771BC /* Alamofire.framework */; };
+		BCDD3A6F1B184EB3009771BC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD3A6E1B184EB3009771BC /* SwiftyJSON.framework */; };
 		BCEC49CD1B1475A500FA0E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC49CC1B1475A500FA0E2D /* AppDelegate.swift */; };
 		BCEC49D01B1475A500FA0E2D /* relamark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCEC49CE1B1475A500FA0E2D /* relamark.xcdatamodeld */; };
-		BCEC49D21B1475A500FA0E2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC49D11B1475A500FA0E2D /* ViewController.swift */; };
 		BCEC49D51B1475A500FA0E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEC49D31B1475A500FA0E2D /* Main.storyboard */; };
 		BCEC49D71B1475A500FA0E2D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEC49D61B1475A500FA0E2D /* Images.xcassets */; };
 		BCEC49DA1B1475A500FA0E2D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCEC49D81B1475A500FA0E2D /* LaunchScreen.xib */; };
@@ -28,11 +40,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		691CCA0A3C39A990712932C9 /* Pods-relamark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-relamark.release.xcconfig"; path = "Pods/Target Support Files/Pods-relamark/Pods-relamark.release.xcconfig"; sourceTree = "<group>"; };
+		6B462BBA9C6668E91248F7BB /* Pods_relamark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_relamark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACD796978FE614AB9CC584E1 /* Pods-relamark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-relamark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-relamark/Pods-relamark.debug.xcconfig"; sourceTree = "<group>"; };
+		BC1227F91B2EC1D00043520A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		BC3C07F21B2034F200AC207E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BC3C07F51B20617200AC207E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BC7657171B2F1D2000F99485 /* MyShopListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShopListViewController.swift; sourceTree = "<group>"; };
+		BC9CD0011B183CFE00A7B5AE /* ShopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
+		BCC073A21B2EBAF6001330B7 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		BCCA99271B2AE6080064D180 /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark.png; sourceTree = "<group>"; };
+		BCCA992D1B2B248C0064D180 /* pin-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-selected.png"; sourceTree = "<group>"; };
+		BCCA992E1B2B248C0064D180 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		BCDD3A6A1B1848D1009771BC /* ShopDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopDetailViewController.swift; sourceTree = "<group>"; };
+		BCDD3A6C1B184EAF009771BC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Pods-relamark/Alamofire.framework"; sourceTree = "<group>"; };
+		BCDD3A6E1B184EB3009771BC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/Pods-relamark/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		BCEC49C71B1475A500FA0E2D /* relamark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = relamark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEC49CB1B1475A500FA0E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCEC49CC1B1475A500FA0E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCEC49CF1B1475A500FA0E2D /* relamark.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = relamark.xcdatamodel; sourceTree = "<group>"; };
-		BCEC49D11B1475A500FA0E2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCEC49D41B1475A500FA0E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCEC49D61B1475A500FA0E2D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BCEC49D91B1475A500FA0E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -47,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCDD3A6F1B184EB3009771BC /* SwiftyJSON.framework in Frameworks */,
+				BCDD3A6D1B184EAF009771BC /* Alamofire.framework in Frameworks */,
+				839061EAD180F6BFC123E944 /* Pods_relamark.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +89,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9199AB95804150611D53EFDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACD796978FE614AB9CC584E1 /* Pods-relamark.debug.xcconfig */,
+				691CCA0A3C39A990712932C9 /* Pods-relamark.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ABFCEB9F11CDF59BF3EB7B34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCDD3A6E1B184EB3009771BC /* SwiftyJSON.framework */,
+				BCDD3A6C1B184EAF009771BC /* Alamofire.framework */,
+				6B462BBA9C6668E91248F7BB /* Pods_relamark.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCCA99261B2AE6080064D180 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BCCA992D1B2B248C0064D180 /* pin-selected.png */,
+				BCCA992E1B2B248C0064D180 /* pin.png */,
+				BCC073A21B2EBAF6001330B7 /* button.png */,
+				BCCA99271B2AE6080064D180 /* bookmark.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		BCEC49BE1B1475A500FA0E2D = {
 			isa = PBXGroup;
 			children = (
 				BCEC49C91B1475A500FA0E2D /* relamark */,
 				BCEC49E21B1475A500FA0E2D /* relamarkTests */,
 				BCEC49C81B1475A500FA0E2D /* Products */,
+				9199AB95804150611D53EFDB /* Pods */,
+				ABFCEB9F11CDF59BF3EB7B34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,13 +143,19 @@
 			isa = PBXGroup;
 			children = (
 				BCEC49CC1B1475A500FA0E2D /* AppDelegate.swift */,
-				BCEC49D11B1475A500FA0E2D /* ViewController.swift */,
 				BCEC49D31B1475A500FA0E2D /* Main.storyboard */,
 				BCEC49D61B1475A500FA0E2D /* Images.xcassets */,
 				BCEC49D81B1475A500FA0E2D /* LaunchScreen.xib */,
 				BCEC49CE1B1475A500FA0E2D /* relamark.xcdatamodeld */,
 				BCEC49CA1B1475A500FA0E2D /* Supporting Files */,
 				BCEC49EF1B1475E900FA0E2D /* MapViewController.swift */,
+				BC9CD0011B183CFE00A7B5AE /* ShopsViewController.swift */,
+				BCCA99261B2AE6080064D180 /* images */,
+				BCDD3A6A1B1848D1009771BC /* ShopDetailViewController.swift */,
+				BC3C07F21B2034F200AC207E /* LoginViewController.swift */,
+				BC3C07F51B20617200AC207E /* SignUpViewController.swift */,
+				BC1227F91B2EC1D00043520A /* MenuViewController.swift */,
+				BC7657171B2F1D2000F99485 /* MyShopListViewController.swift */,
 			);
 			path = relamark;
 			sourceTree = "<group>";
@@ -125,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCEC49E91B1475A500FA0E2D /* Build configuration list for PBXNativeTarget "relamark" */;
 			buildPhases = (
+				F9CC51156170FA33F08AC446 /* Check Pods Manifest.lock */,
 				BCEC49C31B1475A500FA0E2D /* Sources */,
 				BCEC49C41B1475A500FA0E2D /* Frameworks */,
 				BCEC49C51B1475A500FA0E2D /* Resources */,
+				6A1B38DBABC4EEE68E55E45C /* Embed Pods Frameworks */,
+				611C3EEB5F57176D85E22C14 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,7 +268,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC073A31B2EBAF6001330B7 /* button.png in Resources */,
+				BCCA992F1B2B248C0064D180 /* pin-selected.png in Resources */,
 				BCEC49D51B1475A500FA0E2D /* Main.storyboard in Resources */,
+				BCCA99281B2AE6080064D180 /* bookmark.png in Resources */,
+				BCCA99301B2B248C0064D180 /* pin.png in Resources */,
 				BCEC49DA1B1475A500FA0E2D /* LaunchScreen.xib in Resources */,
 				BCEC49D71B1475A500FA0E2D /* Images.xcassets in Resources */,
 			);
@@ -213,15 +287,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		611C3EEB5F57176D85E22C14 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-relamark/Pods-relamark-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A1B38DBABC4EEE68E55E45C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-relamark/Pods-relamark-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9CC51156170FA33F08AC446 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BCEC49C31B1475A500FA0E2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCEC49D21B1475A500FA0E2D /* ViewController.swift in Sources */,
+				BC3C07F31B2034F200AC207E /* LoginViewController.swift in Sources */,
+				BC3C07F61B20617200AC207E /* SignUpViewController.swift in Sources */,
 				BCEC49D01B1475A500FA0E2D /* relamark.xcdatamodeld in Sources */,
 				BCEC49CD1B1475A500FA0E2D /* AppDelegate.swift in Sources */,
+				BC9CD0021B183CFE00A7B5AE /* ShopsViewController.swift in Sources */,
+				BC7657181B2F1D2000F99485 /* MyShopListViewController.swift in Sources */,
+				BCDD3A6B1B1848D1009771BC /* ShopDetailViewController.swift in Sources */,
 				BCEC49F01B1475E900FA0E2D /* MapViewController.swift in Sources */,
+				BC1227FA1B2EC1D00043520A /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +407,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Atsushi Kawasaki (FJ623Y62ZJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Atsushi Kawasaki (FJ623Y62ZJ)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -302,6 +430,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "b4f8419e-02a1-49e2-8a24-fea3635cab39";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -324,7 +453,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Atsushi Kawasaki (FJ623Y62ZJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Atsushi Kawasaki (FJ623Y62ZJ)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -339,6 +469,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "b4f8419e-02a1-49e2-8a24-fea3635cab39";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -346,21 +477,37 @@
 		};
 		BCEC49EA1B1475A500FA0E2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACD796978FE614AB9CC584E1 /* Pods-relamark.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Atsushi Kawasaki (FJ623Y62ZJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Atsushi Kawasaki (FJ623Y62ZJ)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods-relamark",
+				);
 				INFOPLIST_FILE = relamark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "012E0704-CBC0-4F77-9543-1E138FE2D5B9";
 			};
 			name = Debug;
 		};
 		BCEC49EB1B1475A500FA0E2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 691CCA0A3C39A990712932C9 /* Pods-relamark.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Atsushi Kawasaki (FJ623Y62ZJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Atsushi Kawasaki (FJ623Y62ZJ)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods-relamark",
+				);
 				INFOPLIST_FILE = relamark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "012E0704-CBC0-4F77-9543-1E138FE2D5B9";
 			};
 			name = Release;
 		};
@@ -379,6 +526,7 @@
 				INFOPLIST_FILE = relamarkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "012E0704-CBC0-4F77-9543-1E138FE2D5B9";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/relamark.app/relamark";
 			};
 			name = Debug;
@@ -394,6 +542,7 @@
 				INFOPLIST_FILE = relamarkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "012E0704-CBC0-4F77-9543-1E138FE2D5B9";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/relamark.app/relamark";
 			};
 			name = Release;
@@ -417,6 +566,7 @@
 				BCEC49EB1B1475A500FA0E2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCEC49EC1B1475A500FA0E2D /* Build configuration list for PBXNativeTarget "relamarkTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +575,7 @@
 				BCEC49EE1B1475A500FA0E2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
