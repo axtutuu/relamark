@@ -23,6 +23,15 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         password.secureTextEntry = true
         passwordConfirm.secureTextEntry = true
+        
+        // place holder用
+        let attributesDictionary = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
+        // placeHolderカラー変更
+        email.attributedPlaceholder = NSAttributedString(string: "Email", attributes: attributesDictionary)
+        password.attributedPlaceholder = NSAttributedString(string: "Password", attributes: attributesDictionary)
+        passwordConfirm.attributedPlaceholder = NSAttributedString(string: "Password Confirm", attributes: attributesDictionary)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,8 +50,8 @@ class SignUpViewController: UIViewController {
             alertController.addAction(action)
             presentViewController(alertController, animated: true, completion: nil)
         } else {
-            
-            var requestURL = "http://localhost:3000/api/v1/users.json"
+            var requestURL = Const().URL_API + "/api/v1/users.json"
+
             var parametars = [
                 "email" : email.text,
                 "password" : password.text,

@@ -21,8 +21,6 @@ class ShopsViewController: UIViewController, UITableViewDataSource, UITableViewD
     // shop一覧
     var shopsDataArray = NSArray()
     
-    var requestUrl = "http://relamark.link/api/v1/spots.json"
-    
     var jsonData : JSON = []
     
     var imageUrl : String?
@@ -34,6 +32,9 @@ class ShopsViewController: UIViewController, UITableViewDataSource, UITableViewD
     // menuボタンの生成 / サイズ指定
     var menuButton:UIButton! = UIButton(frame: CGRectMake(0, 0, 100, 100))
     
+    // カラー
+    var alpha = 0.3
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,11 +42,21 @@ class ShopsViewController: UIViewController, UITableViewDataSource, UITableViewD
         table.dataSource = self
         table.delegate = self
         
+        
+        // ボタンの表示
+        menuButton.layer.position = CGPoint(x: self.view.frame.width - 40, y: self.view.frame.height - 100)
+        menuButton.setImage(UIImage(named: "button.png"), forState: .Normal)
+        menuButton.addTarget(self, action: "tappedMenuButton:", forControlEvents:.TouchUpInside)
+        self.view.addSubview(menuButton)
+
+    }
+    
+    override func viewWillAppear(animated: Bool) {
         var parameters = [
             "lat" : "\(self.lat)",
             "lon" : "\(self.lon)"
         ]
-        
+        var requestUrl = Const().URL_API + "/api/v1/spots.json"
         Alamofire.request(.GET, requestUrl, parameters: parameters).responseJSON
             {
                 (request, response, json, errors) in
@@ -54,13 +65,6 @@ class ShopsViewController: UIViewController, UITableViewDataSource, UITableViewD
                 self.jsonData = JSON(json!)
                 self.table.reloadData()
         }
-        
-        // ボタンの表示
-        menuButton.layer.position = CGPoint(x: self.view.frame.width - 40, y: self.view.frame.height - 100)
-        menuButton.setImage(UIImage(named: "button.png"), forState: .Normal)
-        menuButton.addTarget(self, action: "tappedMenuButton:", forControlEvents:.TouchUpInside)
-        self.view.addSubview(menuButton)
-
     }
     
     override func didReceiveMemoryWarning() {
@@ -76,6 +80,7 @@ class ShopsViewController: UIViewController, UITableViewDataSource, UITableViewD
     // セルの内容
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
+        println(cell.backgroundColor)
         
         var shopDic = shopsDataArray[indexPath.row] as! NSDictionary
         
@@ -97,14 +102,11 @@ class ShopsViewController: UIViewController, UITableViewDataSource, UITableViewD
         types.text = typeArray.componentsJoinedByString(",")
         
         
-        if (indexPath.row % 2 == 0) {
-            cell.backgroundColor = UIColor(red: 0.988, green: 0.694, blue: 0, alpha: 1)
-        } else {
-            cell.backgroundColor = UIColor(red: 1, green: 0.322, blue: 0.204, alpha: 1)
-        }
+        alpha += 0.1
+        cell.backgroundColor = UIColor.hex("F32800", alpha: CGFloat(alpha))
+        
         println("\(indexPath.row)")
         return cell
-        
     }
     
     // セルの高さ
@@ -125,6 +127,10 @@ class ShopsViewController: UIViewController, UITableViewDataSource, UITableViewD
         performSegueWithIdentifier("toShopDetailView", sender: self)
     }
     
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
     // 遷移時のデータ受け渡し
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // 遷移先のインスタンス
@@ -142,16 +148,4 @@ class ShopsViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.presentViewController(menuView, animated: true, completion: nil)
         println("メニュータップ")
     }
-
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
 }

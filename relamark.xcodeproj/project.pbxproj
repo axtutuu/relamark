@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		839061EAD180F6BFC123E944 /* Pods_relamark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B462BBA9C6668E91248F7BB /* Pods_relamark.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BC1227FA1B2EC1D00043520A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1227F91B2EC1D00043520A /* MenuViewController.swift */; };
+		BC1688111B32B73E004AB62A /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1688101B32B73E004AB62A /* menu.png */; };
 		BC3C07F31B2034F200AC207E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C07F21B2034F200AC207E /* LoginViewController.swift */; };
 		BC3C07F61B20617200AC207E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C07F51B20617200AC207E /* SignUpViewController.swift */; };
+		BC4B8F4C1B327C9D008E8E3D /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC4B8F4B1B327C9D008E8E3D /* logo.png */; };
+		BC4E252A1B3517F60020DDF3 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E25291B3517F60020DDF3 /* Const.swift */; };
 		BC7657181B2F1D2000F99485 /* MyShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7657171B2F1D2000F99485 /* MyShopListViewController.swift */; };
+		BC76571A1B2F2AF800F99485 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7657191B2F2AF800F99485 /* LaunchViewController.swift */; };
+		BC76571C1B302AEA00F99485 /* MyShopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76571B1B302AEA00F99485 /* MyShopDetailViewController.swift */; };
 		BC9CD0021B183CFE00A7B5AE /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CD0011B183CFE00A7B5AE /* ShopsViewController.swift */; };
 		BCC073A31B2EBAF6001330B7 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = BCC073A21B2EBAF6001330B7 /* button.png */; };
 		BCCA99281B2AE6080064D180 /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = BCCA99271B2AE6080064D180 /* bookmark.png */; };
@@ -20,6 +25,7 @@
 		BCDD3A6B1B1848D1009771BC /* ShopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDD3A6A1B1848D1009771BC /* ShopDetailViewController.swift */; };
 		BCDD3A6D1B184EAF009771BC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD3A6C1B184EAF009771BC /* Alamofire.framework */; };
 		BCDD3A6F1B184EB3009771BC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDD3A6E1B184EB3009771BC /* SwiftyJSON.framework */; };
+		BCDFC7BB1B32942C005EB6EC /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDFC7BA1B32942C005EB6EC /* extentions.swift */; };
 		BCEC49CD1B1475A500FA0E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC49CC1B1475A500FA0E2D /* AppDelegate.swift */; };
 		BCEC49D01B1475A500FA0E2D /* relamark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCEC49CE1B1475A500FA0E2D /* relamark.xcdatamodeld */; };
 		BCEC49D51B1475A500FA0E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEC49D31B1475A500FA0E2D /* Main.storyboard */; };
@@ -44,9 +50,14 @@
 		6B462BBA9C6668E91248F7BB /* Pods_relamark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_relamark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD796978FE614AB9CC584E1 /* Pods-relamark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-relamark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-relamark/Pods-relamark.debug.xcconfig"; sourceTree = "<group>"; };
 		BC1227F91B2EC1D00043520A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		BC1688101B32B73E004AB62A /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		BC3C07F21B2034F200AC207E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BC3C07F51B20617200AC207E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BC4B8F4B1B327C9D008E8E3D /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		BC4E25291B3517F60020DDF3 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		BC7657171B2F1D2000F99485 /* MyShopListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShopListViewController.swift; sourceTree = "<group>"; };
+		BC7657191B2F2AF800F99485 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		BC76571B1B302AEA00F99485 /* MyShopDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShopDetailViewController.swift; sourceTree = "<group>"; };
 		BC9CD0011B183CFE00A7B5AE /* ShopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
 		BCC073A21B2EBAF6001330B7 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		BCCA99271B2AE6080064D180 /* bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark.png; sourceTree = "<group>"; };
@@ -55,6 +66,7 @@
 		BCDD3A6A1B1848D1009771BC /* ShopDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopDetailViewController.swift; sourceTree = "<group>"; };
 		BCDD3A6C1B184EAF009771BC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Pods-relamark/Alamofire.framework"; sourceTree = "<group>"; };
 		BCDD3A6E1B184EB3009771BC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/Pods-relamark/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		BCDFC7BA1B32942C005EB6EC /* extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extentions.swift; sourceTree = "<group>"; };
 		BCEC49C71B1475A500FA0E2D /* relamark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = relamark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEC49CB1B1475A500FA0E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCEC49CC1B1475A500FA0E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +126,8 @@
 				BCCA992D1B2B248C0064D180 /* pin-selected.png */,
 				BCCA992E1B2B248C0064D180 /* pin.png */,
 				BCC073A21B2EBAF6001330B7 /* button.png */,
+				BC1688101B32B73E004AB62A /* menu.png */,
+				BC4B8F4B1B327C9D008E8E3D /* logo.png */,
 				BCCA99271B2AE6080064D180 /* bookmark.png */,
 			);
 			path = images;
@@ -156,6 +170,10 @@
 				BC3C07F51B20617200AC207E /* SignUpViewController.swift */,
 				BC1227F91B2EC1D00043520A /* MenuViewController.swift */,
 				BC7657171B2F1D2000F99485 /* MyShopListViewController.swift */,
+				BC7657191B2F2AF800F99485 /* LaunchViewController.swift */,
+				BC76571B1B302AEA00F99485 /* MyShopDetailViewController.swift */,
+				BCDFC7BA1B32942C005EB6EC /* extentions.swift */,
+				BC4E25291B3517F60020DDF3 /* Const.swift */,
 			);
 			path = relamark;
 			sourceTree = "<group>";
@@ -270,8 +288,10 @@
 			files = (
 				BCC073A31B2EBAF6001330B7 /* button.png in Resources */,
 				BCCA992F1B2B248C0064D180 /* pin-selected.png in Resources */,
+				BC1688111B32B73E004AB62A /* menu.png in Resources */,
 				BCEC49D51B1475A500FA0E2D /* Main.storyboard in Resources */,
 				BCCA99281B2AE6080064D180 /* bookmark.png in Resources */,
+				BC4B8F4C1B327C9D008E8E3D /* logo.png in Resources */,
 				BCCA99301B2B248C0064D180 /* pin.png in Resources */,
 				BCEC49DA1B1475A500FA0E2D /* LaunchScreen.xib in Resources */,
 				BCEC49D71B1475A500FA0E2D /* Images.xcassets in Resources */,
@@ -340,7 +360,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCDFC7BB1B32942C005EB6EC /* extentions.swift in Sources */,
 				BC3C07F31B2034F200AC207E /* LoginViewController.swift in Sources */,
+				BC76571A1B2F2AF800F99485 /* LaunchViewController.swift in Sources */,
 				BC3C07F61B20617200AC207E /* SignUpViewController.swift in Sources */,
 				BCEC49D01B1475A500FA0E2D /* relamark.xcdatamodeld in Sources */,
 				BCEC49CD1B1475A500FA0E2D /* AppDelegate.swift in Sources */,
@@ -349,6 +371,8 @@
 				BCDD3A6B1B1848D1009771BC /* ShopDetailViewController.swift in Sources */,
 				BCEC49F01B1475E900FA0E2D /* MapViewController.swift in Sources */,
 				BC1227FA1B2EC1D00043520A /* MenuViewController.swift in Sources */,
+				BC76571C1B302AEA00F99485 /* MyShopDetailViewController.swift in Sources */,
+				BC4E252A1B3517F60020DDF3 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +512,7 @@
 				);
 				INFOPLIST_FILE = relamark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "012E0704-CBC0-4F77-9543-1E138FE2D5B9";
 			};
@@ -506,6 +531,7 @@
 				);
 				INFOPLIST_FILE = relamark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "012E0704-CBC0-4F77-9543-1E138FE2D5B9";
 			};

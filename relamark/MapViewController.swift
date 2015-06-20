@@ -57,7 +57,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         // ボタンの表示
         menuButton.layer.position = CGPoint(x: self.view.frame.width - 40, y: self.view.frame.height - 100)
-        menuButton.setImage(UIImage(named: "button.png"), forState: .Normal)
+        menuButton.setImage(UIImage(named: "menu.png"), forState: .Normal)
         menuButton.addTarget(self, action: "tappedMenuButton:", forControlEvents:.TouchUpInside)
         self.view.addSubview(menuButton)
     }
@@ -121,9 +121,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         svc.lon = kedo
     }
     
-    @IBAction func tappedMenuButton(sender: AnyObject) {
-//        var menu : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Menu")
-//        self.presentViewController(menu as! UIViewController, animated: true, completion: nil)
+    func tappedMenuButton(sender: AnyObject) {
         let menuView = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Menu") as! UIViewController;()
         menuView.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
         self.presentViewController(menuView, animated: true, completion: nil)

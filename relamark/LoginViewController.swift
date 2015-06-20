@@ -16,6 +16,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     
+    // place holder用
+    let attributesDictionary = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+    
     var uid = NSUserDefaults.standardUserDefaults().stringForKey("token")
     
     override func viewDidLoad() {
@@ -25,8 +28,11 @@ class LoginViewController: UIViewController {
         if ((uid) != nil) {
             self.performSegueWithIdentifier("toMapView", sender: nil)
         }
-                
-        println(uid)
+        
+        // placeholderのテキストカラー変更
+        email.attributedPlaceholder = NSAttributedString(string: "Email", attributes: attributesDictionary)
+        
+        password.attributedPlaceholder = NSAttributedString(string: "Password", attributes: attributesDictionary)
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,25 +48,29 @@ class LoginViewController: UIViewController {
             presentViewController(alertController, animated: true, completion: nil)
             
         } else {
-            var request = "http://localhost:3000/api/v1/user_sessions.json"
+            var requestUrl = Const().URL_API + "/api/v1/user_sessions.json"
             var parameters = [
                 "email" : email.text,
                 "password" : password.text
             ]
             
-            Alamofire.request(.POST, request, parameters: parameters).responseJSON
+            Alamofire.request(.POST, requestUrl, parameters: parameters).responseJSON
                 {
                     (request, response, json, errors) in
                     var jsonData = JSON(json!)
+                    println(jsonData)
                     if jsonData["results"]["status"] == 1 {
                         NSUserDefaults.standardUserDefaults().setObject(jsonData["results"]["token"].string!, forKey: "token")
                         self.performSegueWithIdentifier("toMapView", sender: nil)
                     } else {
-                        
+                        // ログイン失敗アラート画面
+                        let alertController = UIAlertController(title: "Error", message: "Couldn't find user.\nPlease Sign Up before use this App", preferredStyle: UIAlertControllerStyle.Alert)
+                        var action = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                        alertController.addAction(action)
+                        self.presentViewController(alertController, animated: true, completion: nil)
                     }
                     println(jsonData)
             }
         }
     }
-    
 }
